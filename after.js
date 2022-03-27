@@ -19,6 +19,26 @@ function after(times, callback_func) {
 const called = function(string) { return('hello ' + string); };
 const afterCalled = after(3, called);
 
+// METHOD 2: USING REST PARAMETERS AS INPUT
+/*
+function after(times, cb_func) {
+  let counter = 0;
+  function after_times(...str) { // using rest parameter
+    if (counter < times) {
+      counter++;
+    }
+    if (counter >= times) {
+      counter++;
+      return cb_func(...str); // using spread operator
+    }
+    // if (counter > times) {
+    //   return "too many times"
+    // }
+  }
+  return after_times;
+}
+*/
+
 // UNCOMMENT THESE LINES TO TEST YOUR WORK
 console.log(afterCalled('world')); // -> undefined is printed
 console.log(afterCalled('world')); // -> undefined is printed
