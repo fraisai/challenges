@@ -19,11 +19,11 @@ cascade(12345) should print
 function opp_cascade(string, store) {
     string = String(string);
     if (store.length === 0) {
-        return string + (store);
+      return;
     }
 
     let newStr = string + store[store.length - 1]; 
-    console.log(newStr);
+    console.log(parseInt(newStr));
     store = store.slice(0, -1);
     return opp_cascade(newStr, store)
 }
@@ -31,26 +31,28 @@ function opp_cascade(string, store) {
 function cascade(number, store = []) {
     let str = String(number);
     if (str.length === 1) {
-        console.log(str)
+        console.log(parseInt(str))
         let newStr = str + store[store.length - 1];
         store = store.slice(0, -1);
-        console.log(newStr);
+        console.log(parseInt(newStr));
         return opp_cascade(newStr, store);
     }
 
     
-    console.log(str);
+    console.log(parseInt(str));
     store += str[str.length - 1]; 
     let newNum = str.slice(0, -1);
     return cascade(newNum, store);
 }
 
 
-cascade(12345);
-cascade(111);
+
 
 // // Uncomment to test your work!
-// cascade(111)
+cascade(111);
+cascade(12345);
+cascade(144254);
+
 // // should print
 // /*
 // 111
