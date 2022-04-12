@@ -5,17 +5,18 @@ Additional arguments needed by the passed-in function will need to be passed int
 
 */
 
-function defineFirstArg(func, ...args) {
-  function insideFn(...add) {
-    return func(args, ...add);
+function defineFirstArg(func, ...arg) {
+  function newFunc(...n) {
+    console.log(...arg, ...n) // logs 20 5
+    return func(...arg, ...n)
   }
-  return insideFn;
+  return newFunc;
 }
-
 // Uncomment these to check your work!
 const subtract = function(big, small) { return big - small; };
 const subFrom20 = defineFirstArg(subtract, 20);
 console.log(subFrom20(5)); // should log: 15
+
 
 
 // METHOD 2:
