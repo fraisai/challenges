@@ -10,24 +10,15 @@ function flattenRecursively(arr, result = [], round = 0) {
     console.log("base case:")
     return result
   }
-  
   // if the 1st element of arr is an array
   if (arr[0].constructor === Array) {
-    console.log("\nif - round:", ++round)
-
-    let newArr = arr[0].concat(arr.slice(1));
-    console.log("newArr", newArr);
-    
+    let newArr = arr[0].concat(arr.slice(1)); // concatenate first array with 2nd element   
     return flattenRecursively(newArr, result, round);
-    
   } else {
-    console.log("else - round", ++round)
     result.push(arr[0]);
-    console.log("result in arr ", arr)
   }
   
   console.log("final result", result)
-
   return flattenRecursively(arr.slice(1), result, round);
 }
 
