@@ -1,3 +1,4 @@
+/*
 Extension: 
 Write a function that returns an array containing the numbers 1 to NUM.
 // Put "fizz" in place of numbers divisble by 3 but not by 5 or 7,
