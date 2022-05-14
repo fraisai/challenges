@@ -26,7 +26,7 @@ function snakeToCamel (str) {
   str = str.toLowerCase();
 
   // If the underscore is the last character it should not be present on the resulting string.
-  if (str[str.length - 1] === '_') {
+  while (str[str.length - 1] === '_') {
     str = str.substring(0, str.length - 1);
   }
 
