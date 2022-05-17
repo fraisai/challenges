@@ -10,14 +10,10 @@ binToDec('100') -> 4
 binToDec('101') -> 5
 binToDec('0101') -> 5
 
-** Binary is read from right to left
-
-
 For more information on how to read binary, check out this article: 
 https://m.wikihow.com/Read-Binary
 
-*/
-
+** Binary is read from right to left
 
 */
 // ========== METHOD 1: USING forEach ================ 
@@ -47,36 +43,47 @@ https://m.wikihow.com/Read-Binary
 // }
 
 // ========== METHOD 2: USING A HASH ================ 
-function binToDec(binString){
-    // convert binString into an array of characters and then reverse the array (thus the last value is now the first so the binary number can be "read" from left to right instead of right to left)
-    let arr = binString.split("").reverse();
+// function binToDec(binString){
+//     // convert binString into an array of characters and then reverse the array (thus the last value is now the first so the binary number can be "read" from left to right instead of right to left)
+//     let arr = binString.split("").reverse();
 
-    // Create a hashtable, map1
-    const map1 = new Map();
+//     // Create a hashtable, map1
+//     const map1 = new Map();
 
-    // declare the variable binary and initialize it to 0
-    let binary = 0;
+//     // declare the variable binary and initialize it to 0
+//     let binary = 0;
 
-    // create a key value pair
-    map1.set('binary', binary)
-    // declare the variable exp that will keep track of the exponent  
-    let exp = 0;
+//     // create a key value pair
+//     map1.set('binary', binary)
+//     // declare the variable exp that will keep track of the exponent  
+//     let exp = 0;
 
-    // iterate through arr
-    arr.forEach(el => {
-        // if the current element is the string of '1'
-        if (el === '1') {
-            // add 2 ^ exp to the binary variable
-            map1.set('binary', binary += Math.pow(2, exp))
-        } else { // if the current element is the string of '0', add 0 to binary
-            map1.set('binary', binary += 0)
-        }
-        // increment the value of the exponent by 1
-        exp += 1;
-    })
-    return map1.get('binary'); // return the final binary digit
+//     // iterate through arr
+//     arr.forEach(el => {
+//         // if the current element is the string of '1'
+//         if (el === '1') {
+//             // add 2 ^ exp to the binary variable
+//             map1.set('binary', binary += Math.pow(2, exp))
+//         } else { // if the current element is the string of '0', add 0 to binary
+//             map1.set('binary', binary += 0)
+//         }
+//         // increment the value of the exponent by 1
+//         exp += 1;
+//     })
+//     return map1.get('binary'); // return the final binary digit
+// }
+
+
+// ========== METHOD 3:  ================ 
+function binToDec(binString) {
+    let output = 0;
+    for (let i = 0; i < binString.length; i++) {
+        let power = binString.length - i - 1;
+        output = output + 2 ** power * binString[i];
+        console.log("binString: ", binString, "binString[i]: ", binString[i], "power: ", power, "output: ", output)
+    }
+    return output;
 }
-
 
 /*
 const map1 = new Map();
@@ -105,8 +112,10 @@ map1.delete('b');
 console.log(map1.size);
 // expected output: 2
 */
-console.log(binToDec('0'));  // -> 0
+// console.log(binToDec('0'));  // -> 0
 console.log(binToDec('11')); //  -> 3
-console.log(binToDec('100')) // -> 4
-console.log(binToDec('101')) // -> 5
-console.log(binToDec('0101')) // -> 5
+// console.log(binToDec('100')) // -> 4
+// console.log(binToDec('101')) // -> 5
+// console.log(binToDec('0101')) // -> 5
+
+module.exports = {binToDec};
