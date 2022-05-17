@@ -10,6 +10,9 @@ binToDec('100') -> 4
 binToDec('101') -> 5
 binToDec('0101') -> 5
 
+** Binary is read from right to left
+
+
 For more information on how to read binary, check out this article: 
 https://m.wikihow.com/Read-Binary
 
