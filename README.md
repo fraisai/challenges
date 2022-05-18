@@ -35,9 +35,10 @@ My solutions for various JavaScript coding challenges
 
 [delay.js](https://github.com/fraisai/challenges/blob/main/delay.js): Create a function delay that returns a function which (when invoked) waits for the specified amount of time before executing (HINT - research setTimeout()).
 
-[divisibleByFivePairSum.js](https://github.com/fraisai/challenges/blob/main/divisibleByFivePairSum.js): Create a function divisibleByFivePairSum that takes an array of numbers and returns an array of all the pairs of indices whose sum is a multiple of five.
+[divisibleByFivePairSum.js](https://github.com/fraisai/challenges/blob/main/divisibleByFivePairSum.js): Create a function divisibleByFivePairSum that takes an array of numbers and returns an array of all the pairs of indices whose sum is a multiple of five.  
 
-
+[eitherCallback.js](https://github.com/fraisai/challenges/blob/main/eitherCallback.js): 
+Create a function eitherCallback which will achieve the desired console logs. The result of using eitherCallback to combine two callbacks into one callback and then passing that one callback into the function filterArray should match the results of simply passing the two callbacks into the function eitherFilter (function created in another challenge problem).
 
 
 
