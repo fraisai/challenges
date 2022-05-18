@@ -23,6 +23,10 @@ My solutions for various JavaScript coding challenges
   
 [countBy.js](https://github.com/fraisai/challenges/blob/main/countBy.js): Create a function countBy that iterates through an array and perform the callback on each element and stores this value as a key in an object. The value associated with each key will be the number of times that particular return value was returned.  
   
+[createArray.js](https://github.com/fraisai/challenges/blob/main/createArray.js): Create a function createArray that returns an empty object that has the behavior and functionality of an array and includes the methods push, pop, unshift, and shift. The goal of this problem is to reverse engineer what array methods are actually doing.  
+  
+[createFunction.js](https://github.com/fraisai/challenges/blob/main/createFunction.js): Create a function createFunction that creates and returns a function, which returns the string 'hello world'.
+
 
 
   
