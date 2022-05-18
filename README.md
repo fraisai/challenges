@@ -27,6 +27,7 @@ My solutions for various JavaScript coding challenges
   
 [createFunction.js](https://github.com/fraisai/challenges/blob/main/createFunction.js): Create a function createFunction that creates and returns a function, which returns the string 'hello world'.
 
+[cycleIterator.js](https://github.com/fraisai/challenges/blob/main/cycleIterator.js): Create a function cycleIterator returns a function. When first invoked, the returned function will return the first element of the array and so forth. After returning the last element of the array, the next invocation will return the first element of the array again, and continue on with the second element after that and so forth.
 
 
   
