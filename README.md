@@ -19,7 +19,12 @@ My solutions for various javascript coding challenges
   
 [chunkArrayInGroups.js](https://github.com/fraisai/challenges/blob/main/chunkArrayInGroups.js): Create a function chunkArrayInGroups that splits an array into groups whose lengths are of the function's second argument and returns the groups as a 2D array.
 
-[confirmEnding.js](https://github.com/fraisai/challenges/blob/main/confirmEnding.js): Create a function that checks if a string ends with the given target string (second argument, target) using only JS's substring methods (do NOT use the .endsWith() method).  
+[confirmEnding.js](https://github.com/fraisai/challenges/blob/main/confirmEnding.js): Create a function that checks if a string ends with the given target string using only JS's substring methods (do NOT use the .endsWith() method).  
+  
+[countBy.js](https://github.com/fraisai/challenges/blob/main/countBy.js): Create a function countBy that iterates through an array and perform the callback on each element and stores this value as a key in an object. The value associated with each key will be the number of times that particular return value was returned.  
+  
+
+
   
 
 
