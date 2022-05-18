@@ -85,6 +85,7 @@ function binToDec(binString) {
     return output;
 }
 
+// TESTS 
 /*
 const map1 = new Map();
 if (el === '1') {
@@ -113,9 +114,7 @@ console.log(map1.size);
 // expected output: 2
 */
 // console.log(binToDec('0'));  // -> 0
-console.log(binToDec('11')); //  -> 3
+// console.log(binToDec('11')); //  -> 3
 // console.log(binToDec('100')) // -> 4
 // console.log(binToDec('101')) // -> 5
 // console.log(binToDec('0101')) // -> 5
-
-module.exports = {binToDec};
