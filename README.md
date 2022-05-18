@@ -17,4 +17,5 @@ My solutions for various javascript coding challenges
   
 [censor.js](https://github.com/fraisai/challenges/blob/main/censor.js): Create a function censor returns a function that will accept either two strings, or one string. When two strings are given, the returned function will store the strings for future use and when one string is given, the returned function will replace all instances of a first string with the second string before returning the string.  
   
+[chunkArrayInGroups.js](https://github.com/fraisai/challenges/blob/main/chunkArrayInGroups.js): Create a function that splits an array into groups that are the length of size of the function's second argument and returns the groups as a 2D array.
 
