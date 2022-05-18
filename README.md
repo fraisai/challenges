@@ -29,7 +29,10 @@ My solutions for various JavaScript coding challenges
 
 [cycleIterator.js](https://github.com/fraisai/challenges/blob/main/cycleIterator.js): Create a function cycleIterator that returns a function. When first invoked, the returned function will return the first element of the array and so on and so forth. After returning the last element of the array, the next invocation will return the first element of the array again, and continue on with the second element after that and so on.  
 
-[dateStamp.js](https://github.com/fraisai/challenges/blob/main/dateStamp.js): Create a function dateStamp that accepts a function and returns a function, which will accept whatever arguments the passed-in function accepts and returns an object with a date key whose value is today's date represented as a human-readable string (lookup the Date object for conversion methods), and an output key that contains the result from invoking the passed-in function.
+[dateStamp.js](https://github.com/fraisai/challenges/blob/main/dateStamp.js): Create a function dateStamp that accepts a function and returns a function, which will accept whatever arguments the passed-in function accepts and returns an object with a date key whose value is today's date represented as a human-readable string (lookup the Date object for conversion methods), and an output key that contains the result from invoking the passed-in function.  
+
+[defineFirstArg.js](https://github.com/fraisai/challenges/blob/main/defineFirstArg.js): Create a function defineFirstArg that accepts a function and an argument and will return a new function that invokes the passed-in function with the passed-in argument as the passed-in function's first argument. Additional arguments needed by the passed-in function will need to be passed into the returned function.
+
 
 
 
