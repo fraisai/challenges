@@ -31,7 +31,12 @@ My solutions for various JavaScript coding challenges
 
 [dateStamp.js](https://github.com/fraisai/challenges/blob/main/dateStamp.js): Create a function dateStamp that accepts a function and returns a function, which will accept whatever arguments the passed-in function accepts and returns an object with a date key whose value is today's date represented as a human-readable string (lookup the Date object for conversion methods), and an output key that contains the result from invoking the passed-in function.  
 
-[defineFirstArg.js](https://github.com/fraisai/challenges/blob/main/defineFirstArg.js): Create a function defineFirstArg that accepts a function and an argument and will return a new function that invokes the passed-in function with the passed-in argument as the passed-in function's first argument. Additional arguments needed by the passed-in function will need to be passed into the returned function.
+[defineFirstArg.js](https://github.com/fraisai/challenges/blob/main/defineFirstArg.js): Create a function defineFirstArg that accepts a function and an argument and will return a new function that invokes the passed-in function with the passed-in argument as the passed-in function's first argument. Additional arguments needed by the passed-in function will need to be passed into the returned function.  
+
+[delay.js](https://github.com/fraisai/challenges/blob/main/delay.js): Create a function delay that returns a function which (when invoked) waits for the specified amount of time before executing (HINT - research setTimeout()).
+
+[divisibleByFivePairSum.js](https://github.com/fraisai/challenges/blob/main/divisibleByFivePairSum.js): Create a function divisibleByFivePairSum that takes an array of numbers and returns an array of all the pairs of indices whose sum is a multiple of five.
+
 
 
 
