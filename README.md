@@ -40,7 +40,17 @@ My solutions for various JavaScript coding challenges
 [eitherCallback.js](https://github.com/fraisai/challenges/blob/main/eitherCallback.js): 
 Define a function eitherCallback which will achieve the desired console logs. The result of using eitherCallback to combine two callbacks into one callback and then passing that one callback into the function filterArray should match the results of simply passing the two callbacks into the function eitherFilter (function created in another challenge problem).  
 
-[fastCache.js](https://github.com/fraisai/challenges/blob/main/fastCache.js):  Define a function "fastCache" that takes one argument, a function, and returns a function. When fastCache is invoked it creates an object that tracks calls to the returned function, where each input to the returned function is associated with its output. Every subsequent call to that returned function with the same argument will return the output directly from the object, instead of invoking the original function again.
+[falsyBouncer.js](https://github.com/fraisai/challenges/blob/main/falsyBouncer.js): Remove all falsy values from an array.  
+
+[fastCache.js](https://github.com/fraisai/challenges/blob/main/fastCache.js):  Define a function "fastCache" that takes one argument, a function, and returns a function. When fastCache is invoked it creates an object that tracks calls to the returned function, where each input to the returned function is associated with its output. Every subsequent call to that returned function with the same argument will return the output directly from the object, instead of invoking the original function again.  
+
+[findElement.js](https://github.com/fraisai/challenges/blob/main/findElement.js): Create a function that looks through an array arr and returns the first element in it that passes a 'truth test'.  
+
+[findLongestWordLength.js](https://github.com/fraisai/challenges/blob/main/findLongestWordLength.js): Find and return the longest word in a string
+
+[fizzbuzzbazz.js](https://github.com/fraisai/challenges/blob/main/fizzbuzzbazz.js): fizzbuzzbazz...  
+
+
 
 
 
