@@ -16,5 +16,12 @@ function chunkArrayInGroups(arr, size) {
  console.log(result);
  return result;
 }
-chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2); //should return [[0, 1], [2, 3], [4, 5]].
-chunkArrayInGroups(["a", "b", "c", "d"], 2); // returns [ [ 'a', 'b' ], [ 'c', 'd' ] ]
+
+// TESTS
+// console.log(chunkItUp(['a', 'b', 'c', 'd'], 2)); // -> [["a", "b"], ["c", "d"]].
+// console.log(chunkItUp([0, 1, 2, 3, 4, 5], 3)); // [[0, 1, 2], [3, 4, 5]].
+// console.log(chunkItUp([0, 1, 2, 3, 4, 5], 2)); // [[0, 1], [2, 3], [4, 5]].
+// console.log(chunkItUp([0, 1, 2, 3, 4, 5], 4)); // [[0, 1, 2, 3], [4, 5]].
+// chunkItUp([0, 1, 2, 3, 4, 5, 6], 3); // [[0, 1, 2], [3, 4, 5], [6]].
+// chunkItUp([0, 1, 2, 3, 4, 5, 6, 7, 8], 4); // [[0, 1, 2, 3], [4, 5, 6, 7], [8]].
+// chunkItUp([0, 1, 2, 3, 4, 5, 6, 7, 8], 2); // [[0, 1], [2, 3], [4, 5], [6, 7], [8]].
