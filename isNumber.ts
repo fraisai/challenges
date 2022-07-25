@@ -2,7 +2,7 @@
 // isNumber(5); → true
 // isNumber('hi'); → false
 
-function isNumber(value) {
+function isNumber(value: number): boolean {
  if (typeof value === "number") {
    return true;
  } else {
