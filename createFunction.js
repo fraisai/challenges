@@ -7,7 +7,8 @@ When you think you completed createFunction, un-comment out those lines in the c
 
 */
 
-const createFunction = () => {return function hello() {
+const createFunction = () => {
+ return function hello() {
   return "hello world"
 }}
 // Uncomment these to check your work!
